@@ -1,10 +1,4 @@
-var person = new Object();
-
-person.firstname = "Iftikhar";
-person.lastname = "uddin";
-console.log(person);
- 
-var person = {
+var ifti = {
 	passion: "web",
 	love: "Salena Gomez",
 	address:{
@@ -12,4 +6,13 @@ var person = {
 		name: "Tony Brown"
 	}
 };
-console.log(person);
+
+function welcome(person){
+	console.log("Hi " + person.love);
+}
+welcome(ifti);
+welcome({
+	love: "Olamba",
+	passion:"JavaScript"
+});
+

@@ -1,10 +1,7 @@
-var person={
-	firstname: 'ifti',
-	isProgrammer: true
-};
+function greet(){
+	console.log("Damn JavaScript");
+}
 
-console.log(JSON.stringify(person));
+greet.heyman = 'Dash';
 
-var JSONObj = JSON.parse('{"firstname": "ifti","isProgrammer":true}');
-
-console.log(JSONObj);
+console.log(greet.heyman);

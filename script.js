@@ -1,16 +1,9 @@
-var c = {
-	name: 'dash',
-	log: function(){
-		var self = this;
-		self.name = 'What';
-		console.log(self);
-		var setname = function(newname){
-			self.name = newname;
-		}
-		setname('new name updated');
-		console.log(self);
-	}
-	
-}
+//using an Immediately Invoked Function Expression (IIFE)s
+var funk = function(name){
+	console.log("Hey " + name);
+}('Ehehehe');
 
-c.log();
+//JavaScript is cool
+(function(name){
+	console.log("Hey " + name);
+}('Tony is awesome')); //IIFE trick

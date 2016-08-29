@@ -1,12 +1,24 @@
-//function 
+//call back functions
 
-var test = function(){
-	console.log('hey there');
+function sayHiLater(){
+	var greeting = 'hi';
+	
+	setTimeout(function(){
+		console.log(greeting);
+		
+	}, 3000);
 }
 
-test();
+sayHiLater();
 
-// Invoked on the fly
-(function cool(){
-	console.log('hay man');
-}())
+//Call back
+function hola(callback){
+	var work = 12; //some work
+	var work2 = 11; //another work
+	
+	callback();
+}
+
+hola(function(){
+	console.log('Done boss');
+});

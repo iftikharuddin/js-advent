@@ -1,24 +1,16 @@
-//call back functions
+//apply bind call
 
-function sayHiLater(){
-	var greeting = 'hi';
-	
-	setTimeout(function(){
-		console.log(greeting);
-		
-	}, 3000);
+var obj1 = {
+	firstname: "Iftikhar",
+	lastname: "Uddin",
+	getFullname: function(){
+		return this.firstname + ' ' + this.lastname;
+	}
 }
 
-sayHiLater();
+var obj2 = function(){
+	var firstname = 'Olamba';
+	return console.log(this.getFullname());
 
-//Call back
-function hola(callback){
-	var work = 12; //some work
-	var work2 = 11; //another work
-	
-	callback();
-}
+}.bind(obj1)();
 
-hola(function(){
-	console.log('Done boss');
-});

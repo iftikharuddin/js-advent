@@ -1,16 +1,7 @@
-//apply bind call
+//prototype
 
-var obj1 = {
-	firstname: "Iftikhar",
-	lastname: "Uddin",
-	getFullname: function(){
-		return this.firstname + ' ' + this.lastname;
-	}
-}
+var a = {};
 
-var obj2 = function(){
-	var firstname = 'Olamba';
-	return console.log(this.getFullname());
+var b = [];
 
-}.bind(obj1)();
-
+var c = function(){};

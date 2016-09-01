@@ -1,7 +1,9 @@
-//prototype
+//function constructors
 
-var a = {};
+function Person(firstname,lastname){
+	this.firstname = firstname;
+	this.lastname = lastname;
+}
 
-var b = [];
-
-var c = function(){};
+var hy = new Person('Iftikhar', 'uddin');
+console.log(hy);

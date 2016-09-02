@@ -1,9 +1,5 @@
-//function constructors
+//attaching functions to prototype 
 
-function Person(firstname,lastname){
-	this.firstname = firstname;
-	this.lastname = lastname;
+String.prototype.justCheck = function(){
+	return this.length > 5;
 }
-
-var hy = new Person('Iftikhar', 'uddin');
-console.log(hy);

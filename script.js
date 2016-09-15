@@ -1,5 +1,11 @@
-//attaching functions to prototype 
+// Don't use For in with arrays it will display the attached property in Prototype in result 
+Array.prototype.hello = 'GitHub';
+var arr = ['ifti', 'john', 'doe'];
 
-String.prototype.justCheck = function(){
-	return this.length > 5;
+for(var i=0; i< arr.length; i++){
+	console.log(i + ': ' + arr[i])
+}
+
+for(var i in arr){
+	console.log(i + ': ' + arr[i])
 }

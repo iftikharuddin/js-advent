@@ -4,9 +4,10 @@ var person = {
 	firstname : 'Iftikhar',
 	lastname: 'uddin',
 	welcome: function(){
-		return 'Hello' + this.firstname;
+		return 'Hello ' + this.firstname;
 	}
 }
 
 var ifti = Object.create(person);
-console.log(ifti);
+ifti.firstname = 'John Doe';
+console.log(ifti.welcome());

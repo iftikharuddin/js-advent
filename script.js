@@ -1,13 +1,5 @@
-// Polly fill and Creating Object in a new way
-
-var person = {
-	firstname : 'Iftikhar',
-	lastname: 'uddin',
-	welcome: function(){
-		return 'Hello ' + this.firstname;
-	}
-}
-
-var ifti = Object.create(person);
-ifti.firstname = 'John Doe';
-console.log(ifti.welcome());
+//Safe Code for our custom js framework
+(function(global, $){
+	
+	
+}(window, jQuery));
